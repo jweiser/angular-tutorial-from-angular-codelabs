@@ -1,4 +1,4 @@
-# Angular Homes App
+# Angular Homes App (based on https://github.com/angular/codelabs/)
 - Install Angular if you don't have it installed
 
   `npm install -g @angular/cli`
