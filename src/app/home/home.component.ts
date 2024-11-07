@@ -16,10 +16,8 @@ import { HousingService } from '../housing.service';
   		</form>
   	</section>
 	<section class="results">
-		@for (housingLocation of filteredLocationList; track housingLocation.id) {
-			<app-housing-location [housingLocation]="housingLocation">
-			</app-housing-location>
-		}
+		<app-housing-location *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation">
+		</app-housing-location>
 	</section>
   `,
   styleUrls: ['./home.component.css']
